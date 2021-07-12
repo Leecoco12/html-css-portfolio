@@ -1,0 +1,214 @@
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	background-image: url(../img/background.jpg);
+}
+.print-area{
+	width: 80%;
+	margin: 20px auto;
+}
+
+.print-area .header{
+	width: 100%;
+	height: 150px;
+	background-color: rgb(31,34,43);
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.header img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%; 
+	position: absolute;
+	top: 50px;
+	left: 80px;
+	border: 5px solid white;
+	box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+	cursor: pointer;	
+	transition: .5s;
+	user-select: none;
+}
+.header-text{
+	color: white;
+	width: 60%;
+	margin-left: auto;
+}
+.header-text h1{
+	font-size: 40px;
+	font-weight: normal;
+}
+.header-text p{
+	font-size: 20px;
+	color: lightgray;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.left-side{
+	width: 30%;
+	background-color: rgb(31,34,43);
+	text-align: center;
+	color: #fff
+}
+.left-side .contact{
+	margin-top: 130px;
+	padding: 0 30px;
+	padding-bottom: 20px;
+}
+.contact h4{
+	font-size: 30px;
+	font-weight: normal;
+	margin: 20px 0;
+}
+.contact h5{
+	font-size: 18px;
+	margin: 10px 0;
+}
+.contact p{
+	font-size: 17px;
+	color: darkgray;
+}
+.skills{
+	margin-top: 30px;	
+}
+.skills h1{	
+	font-size: 30px;
+	font-weight: normal;
+}
+.bars{
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 20px 10px;
+	padding: 0 20px;
+}
+.bars .bar p{
+	font-size: 15px;
+	font-weight: bold;
+}
+.bar span{
+	display: block;
+	width: 100%;
+	height: 10px;
+	background-color: rgb(192, 191, 191);
+	margin-top: 10px; 
+	border-radius: 10px;
+	position: relative;
+}
+.bar span::before{
+	position: absolute;
+	content: "";
+	width: 80%;
+	height: 80%;	
+	background-color: black;
+	top: 50%;
+	left: 2px;
+	transform: translateY(-50%);
+	border-radius: 10px;
+}
+.follow h1{
+	margin-top: 40px;
+	font-size: 30px;
+	font-weight: normal;
+}
+.follow h4{
+	font-size: 18px;
+	margin: 10px 0;
+}
+.follow p{
+	font-size: 15px;
+}
+.follow p a{
+	color: darkgray;
+}
+
+.right-side{
+	width: 70%;
+	padding: 50px;
+}
+.right-side h1{
+	font-size: 35px;
+    font-weight: normal;
+    color: #fff;
+}
+.right-side .about h1 span{
+	margin-right: 30px;
+	font-size: 50px;
+	color: lightgray;
+}
+.right-side .about ul li{
+	margin: 20px 10;
+	margin-top: 15px;
+	margin-left: 65px;
+	padding-left: 5px;
+	text-align: justify;
+	font-size: 17px;
+	color: darkgray;
+}
+.parcours-group{
+	margin: 20px 0;
+}
+.parcours .parcours-group{
+	position: relative;
+}
+
+.parcours h1 span{
+	margin-right: 30px;
+	font-size: 50px;
+	color: lightgray;
+}
+
+.parcours h3{
+	font-size: 22px;
+	font-weight: normal;
+	padding-left: 70px;	
+	color: #fff;
+}
+.parcours-group h4{
+	font-size: 18px;
+	padding-left: 70px;
+	font-weight: normal;
+	color: gray;
+}
+.parcours-group span{
+	position: absolute;
+	top: 10px;
+	right: 0;
+	color: darkgray;;
+	font-weight: bold;
+	font-size: 15px; 
+}
+.loisirs .title{
+	font-size: 35px;
+	font-weight: normal;
+}
+
+.loisirs h1 span{
+	margin-right: 30px;
+	font-size: 50px;
+	color: lightgray;
+}
+
+.loisirs ul{
+	display: grid;
+	grid-template-columns: repeat(2,2fr);
+	margin: 20px 20px;
+}
+
+.loisirs ul li{
+	list-style: none;
+	margin: 15px 5px;
+	color: darkgray;
+}
+
+.loisirs ul li .fa{
+	color: gray;
+	font-size: 18px;
+	width: 20px;
+}
